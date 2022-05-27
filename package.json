@@ -1,0 +1,85 @@
+{
+  "name": "generator-ui5-euft",
+  "version": "0.1.0",
+  "description": "Easy UI5 Free Template ",
+  "homepage": "",
+  "author": {
+    "name": "Ashish",
+    "email": "",
+    "url": ""
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/app/index.js",
+  "keywords": [
+    "",
+    "yeoman-generator"
+  ],
+  "devDependencies": {
+    "coveralls": "^3.1.1",
+    "directory-tree": "^3.3.0",
+    "eslint": "^8.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-xo": "^0.40.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^8.0.1",
+    "jest": "^28.1.0",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2",
+    "yeoman-assert": "^3.1.1",
+    "yeoman-test": "^6.3.0"
+  },
+  "engines": {
+    "npm": ">= 4.0.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "directory-tree": "^3.3.0",
+    "glob": "^8.0.3",
+    "mkdirp": "^1.0.4",
+    "path": "^0.12.7",
+    "yeoman-generator": "^5.6.1",
+    "yosay": "^2.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "xo",
+      "prettier"
+    ],
+    "env": {
+      "jest": true,
+      "node": true
+    },
+    "rules": {
+      "prettier/prettier": "error"
+    },
+    "plugins": [
+      "prettier"
+    ]
+  },
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "jest"
+  },
+  "repository": "Aashish28/generator-ui-5-euft",
+  "license": "Apache-2.0"
+}
