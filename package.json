@@ -80,6 +80,6 @@
     "pretest": "eslint .",
     "test": "jest"
   },
-  "repository": "Aashish28/generator-ui-5-euft",
+  "repository": "Aashish28/generator-ui5-euft",
   "license": "Apache-2.0"
 }

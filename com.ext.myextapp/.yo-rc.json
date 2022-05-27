@@ -1,9 +1,0 @@
-{
-  "generator-ui5-euft": {
-    "projectname": "myextapp",
-    "namespaceUI5": "com.ext",
-    "appid": "fin.gl.journalentry.upload",
-    "apppath": "/sap/bc/ui5_ui5/sap/FIN_GLJE_UPLD",
-    "namespaceURI": "com/ext"
-  }
-}
