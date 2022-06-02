@@ -12,7 +12,7 @@ module.exports = class extends Generator {
     // Have Yeoman greet the user.
     this.log(
       yosay(
-        'Welcome to the unreal ${chalk.red('generator-ui5-euft')} generator!'
+        'Welcome to the unreal ${chalk.red("generator-ui5-euft")} generator!'
       )
     );
 
@@ -50,7 +50,7 @@ module.exports = class extends Generator {
         default: '/sap/bc/ui5_ui5/sap/FIN_GLJE_UPLD'
       }
     ]).then((answers) => {
-      this.destinationRoot(`${answers.namespaceUI5}.${answers.projectname}`);
+      this.destinationRoot('${answers.namespaceUI5}.${answers.projectname}');
       this.config.set(answers);
       this.config.set("namespaceURI", answers.namespaceUI5.split(".").join("/"));
     });
